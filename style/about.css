@@ -1,0 +1,104 @@
+.clearfix {
+  padding: 0 100px 0 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#left {
+  float: left;
+  width: 45%;
+  background:
+    linear-gradient(
+      to bottom, rgba(255, 140, 13, 0.88), rgba(255, 140, 13, 0.95), rgba(255, 140, 13, 1)
+    ),
+    url("https://c1.staticflickr.com/1/852/29830252458_bdc72be343_b.jpg");
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: 100%;
+}
+
+#left h2 {
+  font-size: 30px
+}
+
+#left p {
+  font-size: 25px;
+}
+
+#me {
+  color: white;
+  text-align: center;
+  padding-top: 245px;
+}
+
+.bio {
+  color: white;
+  text-align: center;
+}
+
+.button {
+  width: 180px;
+  height: 50px;
+  background-image: linear-gradient(to right, #1293DB, #1BADFF);
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  border-radius: 1px;
+}
+
+.button a {
+  text-decoration: none;
+  color: #FF9101;
+  line-height: 50px;
+  font-size: 30px;
+  font-style: oblique
+}
+
+.button:hover {
+  opacity: 0.4;
+}
+
+.social {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 255px;
+}
+
+.social a {
+  color: white;
+  line-height: 50px;
+  font-size: 35px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.fa:hover {
+  opacity: 0.5;
+}
+
+#center {
+  width: 10%;
+  float: left;
+}
+
+.title {
+  background: linear-gradient(to left, #1293DB 33%, #2EB4FF 67%, #1BADFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-left: 0 auto;
+  text-align: center;
+}
+
+#right {
+  width: 45%;
+  float: right;
+}
+
+ul {
+  list-style-type: none;
+}
