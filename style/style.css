@@ -1,15 +1,52 @@
 @import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   font-family: sans-serif;
   background: #FFF;
-  font-weight: 749;
+  font-weight: 700;
+  position: relative;
+  min-height: 100%;
+}
+
+.clearfix { /*All content under nav bar*/
+  padding: 0 100px 0 0;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#left {
+  float: left;
+  width: 45%;
+  background: linear-gradient(to bottom, rgba(255, 140, 13, 0.88), rgba(255, 140, 13, 0.95), rgba(255, 140, 13, 1));
+}
+
+#right {
+  float: right;
 }
 
 .topnav {
   background: #1293DB;
   overflow: hidden;
   padding: 0 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 500;
 }
 
 .topnav a {
@@ -66,7 +103,18 @@ body {
   background-color: #E88D0C;
 }
 
-@media screen and (max-width: 1120px) {
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+  background: #1293DB;
+}
+
+@media screen and (max-width: 1150px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -74,7 +122,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 1150px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;

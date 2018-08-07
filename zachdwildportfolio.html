@@ -5,6 +5,7 @@
     <title>Zach Wild</title>
     <script src="script/myscript.js"></script>
     <link href="style/style.css" rel="stylesheet" type="text/css"/>
+    <link href="style/portfolio.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family-Work+Sans:300"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link href="/img/unnamed.png" rel="web_icon" type="image/png" sizes="16x16"/> <!--Change /img/face.png to cartoon pic of you-->  <!-- background: rgba(232, 127, 12, 1); -->
@@ -19,6 +20,27 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
-    <div>Portfolio</div>
+    <div class="clearfix">
+      <div class="box" id="left">
+        <h1>Portfolio</h1>
+      </div>
+      <div class="box" id="right">
+        <div id="popup-pok" class="popup-position">
+          <div id="popup-wrapper">
+            <div id="popup-container">
+              <h3>Popup box 1</h3>
+              <p>Congrats, here is info about the popup box</p>
+              <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-pok');">Close popup box</a></p>
+            </div>
+          </div>
+        </div>
+        <div id="warpper">
+          <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-pok');">Open popup box 1</a><p>
+        </div>
+      </div>
+    </div>
+    <div class=footer>
+      <p>Copyright &copy; 2018, Zach Wild's Portfolio Website</p>
+    </div>
   </body>
 </html>

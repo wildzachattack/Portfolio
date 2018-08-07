@@ -1,0 +1,83 @@
+body {
+  background-color: #FFF;
+}
+
+#left {
+  height: 880px;
+  position: fixed;
+}
+
+#right {
+  width: 55%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+p {
+  margin: 10px;
+  color: #323131;
+}
+
+h3 {
+  color: #323131;
+}
+
+h4 {
+  color: #FFF;
+}
+
+h3, h4 {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  padding: 0 100px;
+}
+
+#timeline {
+  background: url("https://c2.staticflickr.com/2/1795/43079523454_f67043ff60_b.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  min-height: 400px;
+  height: 600px;
+  margin: 20px 0 10px 0;
+  z-index: 0;
+}
+
+#timeline-edu {
+  background: url("https://c2.staticflickr.com/2/1772/43079523324_59974c5602_b.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  min-height: 400px;
+  margin: 40px 0 10px 0;
+}
+
+.tl-event > div {
+  width: 47%;
+  position: relative;
+}
+
+.tl-event div div {
+  background: #CFCBCA;
+  border-radius: 10px;
+  padding-left: 15px;
+  border-top: solid;
+  border-width: 5px;
+  border-color: #1293DB;
+}
+
+.tl-event div.event-right {
+  float: right;
+}
+
+.tl-event div.event-left {
+  float: left;
+}

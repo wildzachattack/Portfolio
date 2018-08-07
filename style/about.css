@@ -1,24 +1,12 @@
-.clearfix {
-  padding: 0 100px 0 0;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-#left {
-  float: left;
-  width: 45%;
+#left { /*Image and text over image*/
   background:
     linear-gradient(
       to bottom, rgba(255, 140, 13, 0.88), rgba(255, 140, 13, 0.95), rgba(255, 140, 13, 1)
     ),
     url("https://c1.staticflickr.com/1/852/29830252458_bdc72be343_b.jpg");
   background-repeat: no-repeat;
-  height: auto;
   background-size: 100%;
+  height: auto;
 }
 
 #left h2 {
@@ -27,17 +15,22 @@
 
 #left p {
   font-size: 25px;
+  line-height: 35px;
 }
 
 #me {
   color: white;
   text-align: center;
-  padding-top: 245px;
+  padding-top: 230px;
+  margin-bottom: 35px
 }
 
 .bio {
   color: white;
   text-align: center;
+  margin: 0 auto;
+  max-width: 700px;
+  margin-bottom: 35px;
 }
 
 .button {
@@ -48,6 +41,7 @@
   text-decoration: none;
   margin: 0 auto;
   border-radius: 1px;
+  margin-bottom: 35px;
 }
 
 .button a {
@@ -65,7 +59,7 @@
 .social {
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 255px;
+  margin-bottom: 250px;
 }
 
 .social a {
@@ -90,13 +84,35 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
-  margin-left: 0 auto;
-  text-align: center;
+  margin-left: 20px;
+}
+
+#about {
+  padding-top: 0px;
+}
+
+#skills {
+  padding-top: 150px;
+}
+
+#random {
+  padding-top: 150px;
 }
 
 #right {
   width: 45%;
-  float: right;
+}
+
+.facts {
+  position: relative;
+}
+
+#professional {
+  height: 184px;
+}
+
+#program {
+  height: 184px;
 }
 
 ul {

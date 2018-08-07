@@ -1,0 +1,91 @@
+#left {
+  height: 820px;
+}
+
+#right {
+  width: 55%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.header {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.header p {
+  margin: 40px 0 0 100px;
+  color: grey;
+}
+
+.form {
+  text-align: center;
+}
+
+#name-text {
+  margin-top: 35px;
+}
+
+input {
+  width: 85%;
+  margin: 20px 0 20px 100px;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  border-bottom: 1px solid #0078FF;
+}
+
+::-webkit-input-placeholder {
+  color: #EAEAEA;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+#msg {
+  margin-top: 60px;
+}
+
+.text {
+  font-family: sans-serif;
+}
+
+button {
+  padding: 20px 32px;
+  font-size: 15px;
+  border: none;
+  margin-left: 100px;
+  border-radius: 4px;
+  margin-top: 30px;
+  color: #FFF;
+  background: linear-gradient(to left, #1293DB 33%, #2EB4FF 67%, #1BADFF 100%);
+}
+
+.btn {
+  color: black;
+  position: relative;
+  float: right;
+  top: -45px;
+}
+
+.title {
+  position: relative;
+}
+
+.email {
+  text-align: left;
+  font-size: 20px;
+  margin: 50px 100px 0 100px;
+}
+
+.github {
+  text-align: left;
+  font-size: 20px;
+  margin: 0 210px 0 100px;
+}
+
+.linkedin {
+  text-align: left;
+  font-size: 20px;
+  margin: 0 255px 0 100px;
+}

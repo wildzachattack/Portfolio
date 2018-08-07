@@ -1,0 +1,33 @@
+#left {
+  height: 820px;
+}
+
+#right {
+  width: 55%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.popup-position {
+  display: none;
+  position:fixed;
+  width: 58.5%;
+  top: 0;
+  left: 41.5%;
+  background-color: rgba(207,203,202, 0.8);
+  height: 100%;
+}
+
+#popup-wrapper {
+  width: 500px;
+  margin: 70px auto;
+  text-align: left;
+}
+
+#popup-container {
+  background-color: #FFF;
+  margin-top: 75%;
+  border-radius: 4px;
+}
