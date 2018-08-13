@@ -47,6 +47,10 @@ h3, h4 {
   text-align: center;
 }
 
+#work {
+  margin-top: 15px;
+}
+
 .timeline {
   background: url("https://c1.staticflickr.com/1/862/43027767775_88187dc459_o.png");
   background-repeat: repeat-y;
@@ -145,25 +149,11 @@ img {
   height: 60px;
 }
 
+#edu {
+  margin-top: 80px
+}
+
 .hcs {
   width: auto;
   height: 60px;
-}
-
-@media (max-width: 1150) {
-  #timeline-work {
-    background-image: url("https://c1.staticflickr.com/1/862/43027767775_88187dc459_o.png");
-    background-repeat: repeat-y;
-    background-position: 0 0;
-  }
-
-  .tl-event div {
-    width: 85%;
-    position: relative;
-  }
-
-  .tl-event div.event-left {
-    float: right;
-    background
-  }
 }

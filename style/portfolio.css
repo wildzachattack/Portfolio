@@ -123,3 +123,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0.8);
   display: inline;
 }
+
+.footer {
+  bottom: 0;
+}

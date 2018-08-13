@@ -102,3 +102,7 @@ button {
 .button:hover, .btn:hover {
   opacity: 0.4;
 }
+
+.footer {
+  bottom: 0;
+}
