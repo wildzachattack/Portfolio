@@ -3,7 +3,25 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zach Wild</title>
-    <script src="script/myscript.js"></script>
+    <script src="script/myscript.js">
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+    </script>
     <link href="style/style.css" rel="stylesheet" type="text/css"/>
     <link href="style/portfolio.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family-Work+Sans:300"/>
@@ -25,17 +43,80 @@
         <h1>Portfolio</h1>
       </div>
       <div class="box" id="right">
-        <div id="popup-pok" class="popup-position">
+        <div id="popup-education" class="popup-position">
           <div id="popup-wrapper">
             <div id="popup-container">
-              <h3>Popup box 1</h3>
+              <h3>Education Game</h3>
               <p>Congrats, here is info about the popup box</p>
-              <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-pok');">Close popup box</a></p>
+              <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-education');">Close popup box</a></p>
             </div>
           </div>
         </div>
-        <div id="warpper">
-          <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-pok');">Open popup box 1</a><p>
+        <div id="popup-phone" class="popup-position">
+          <div id="popup-wrapper">
+            <div id="popup-container">
+              <h3>Phone app for Moser</h3>
+              <p>Congrats, here is info about the popup box</p>
+              <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-phone');">Close popup box</a></p>
+            </div>
+          </div>
+        </div>
+        <div id="popup-website" class="popup-position">
+          <div id="popup-wrapper">
+            <div id="popup-container">
+              <h3>Website for Moser</h3>
+              <p>Congrats, here is info about the popup box</p>
+              <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-website');">Close popup box</a></p>
+            </div>
+          </div>
+        </div>
+        <div id="popup-pok" class="popup-position">
+          <div id="popup-wrapper">
+            <div id="popup-container">
+              <p class="exit"><a href="javascript:void(0)" onclick="toggle_visibility('popup-pok');">&#9746;</a></p>
+              <img class="mySlides" src="">
+              <img class="mySlides" src="">
+              <img class="mySlides" src="">
+              <img class="mySlides" src="">
+              <h3>Pokemon Fire Emblem</h3>
+              <p>Congrats, here is info about the popup box</p>
+              <button class="" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+          </div>
+        </div>
+        <div id="wrapper">
+          <div class="proj-img" id="lgnd">
+            <p><a class="text-up" id="lgnd-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-education');">Legend Lost</a><p>
+            <ul class="text-up bullet-up">
+              <li>C#</li>
+              <li>Unity</li>
+              <li>Video Game</li>
+            </ul>
+          </div>
+          <div class="proj-img" id="sggt">
+            <p><a class="text-up" id="sggt-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-phone');">Suggestion App</a><p>
+            <ul class="text-up bullet-up">
+              <li>Java</li>
+              <li>Google Firebase</li>
+              <li>Android App</li>
+            </ul>
+          </div>
+          <div class="proj-img" id="pjct">
+            <p><a class="text-up" id="pjct-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-website');">Project Charter</a><p>
+            <ul class="text-up bullet-up">
+              <li>Ruby on Rails</li>
+              <li>Website</li>
+            </ul>
+          </div>
+          <div class="proj-img" id="awkn">
+            <p><a class="text-up" id="awkn-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-pok');">Pokemon: Awakening</a><p>
+            <ul class="text-up bullet-up">
+              <li>C#</li>
+              <li>Unity</li>
+              <li>Video Game</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

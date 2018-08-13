@@ -1,9 +1,14 @@
 #left {
-  height: 820px;
+  position: fixed;
+}
+
+#left h1{
+  text-align: center;
+  margin-top: 300px;
 }
 
 #right {
-  width: 55%;
+  width: 60%;
 }
 
 h1 {
@@ -29,7 +34,7 @@ h1 {
 }
 
 input {
-  width: 85%;
+  width: 86%;
   margin: 20px 0 20px 100px;
   background: rgba(0, 0, 0, 0);
   border: none;
@@ -72,20 +77,28 @@ button {
   position: relative;
 }
 
-.email {
+.head {
   text-align: left;
+  margin-left: 100px;
   font-size: 20px;
-  margin: 50px 100px 0 100px;
+  margin-top: 35px;
 }
 
-.github {
-  text-align: left;
-  font-size: 20px;
-  margin: 0 210px 0 100px;
+#email {
+  margin-top: 70px;
 }
 
-.linkedin {
-  text-align: left;
+.btn-resume {
+  width: 140px;
+  height: 30px;
+  background-image: linear-gradient(to right, #1293DB, #1BADFF);
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  line-height: 30px;
   font-size: 20px;
-  margin: 0 255px 0 100px;
+}
+
+.button:hover, .btn:hover {
+  opacity: 0.4;
 }
