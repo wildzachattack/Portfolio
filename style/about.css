@@ -72,7 +72,7 @@
 }
 
 #center {
-  width: 10%;
+  width: 12%;
   float: left;
 }
 
@@ -85,23 +85,25 @@
 }
 
 #about {
-  padding-top: 0px;
+  margin-top: 13px;
 }
 
 #skills {
-  padding-top: 170px;
+  padding-top: 173px;
 }
 
 #random {
-  padding-top: 215px;
+  padding-top: 217px;
 }
 
 #right {
-  width: 50%;
+  width: 48%;
 }
 
 .facts {
   position: relative;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 #professional {

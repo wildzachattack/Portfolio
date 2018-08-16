@@ -3,29 +3,80 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zach Wild</title>
-    <script src="script/myscript.js">
-      var slideIndex = 1;
-      showDivs(slideIndex);
-
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
+    <script src="script/myscript.js"></script>
+    <script>
+      var slideIndexLgnd = 1;
+      showDivsLgnd(slideIndexLgnd);
+      function plusDivsinLgnd(n) {
+        showDivsLgnd(slideIndexLgnd += n);
       }
-
-      function showDivs(n) {
+      function showDivsLgnd(n) {
         var i;
-        var x = document.getElementsByClassName("mySlides");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
+        var x = document.getElementsByClassName("myslideslgnd");
+        if (n > x.length) {slideIndexLgnd = 1}
+        if (n < 1) {slideIndexLgnd = x.length}
         for (i = 0; i < x.length; i++) {
            x[i].style.display = "none";
         }
-        x[slideIndex-1].style.display = "block";
+        x[slideIndexLgnd - 1].style.display = "block";
       }
     </script>
+    <script>
+      var slideIndexApp = 1;
+      showDivsApp(slideIndexApp);
+      function plusDivsinApp(n) {
+        showDivsApp(slideIndexApp += n);
+      }
+      function showDivsApp(n) {
+        var i;
+        var x = document.getElementsByClassName("myslidesapp");
+        if (n > x.length) {slideIndexApp = 1}
+        if (n < 1) {slideIndexApp = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        x[slideIndexApp - 1].style.display = "block";
+      }
+    </script>
+    <script>
+      var slideIndexPC = 1;
+      showDivsPC(slideIndexPC);
+      function slideIndexPC(n) {
+        showDivsPC(slideIndexPC += n);
+      }
+      function showDivsPC(n) {
+        var i;
+        var x = document.getElementsByClassName("myslidespc");
+        if (n > x.length) {slideIndexPC = 1}
+        if (n < 1) {slideIndexPC = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        x[slideIndexPC - 1].style.display = "block";
+      }
+    </script>
+    <script>
+      var slideIndexPkmn = 1;
+      showDivsPkmn(slideIndexPkmn);
+      function plusDivsinPkmn(n) {
+        showDivsPkmn(slideIndexPkmn += n);
+      }
+      function showDivsPkmn(n) {
+        var i;
+        var x = document.getElementsByClassName("myslidespkmn");
+        if (n > x.length) {slideIndexPkmn = 1}
+        if (n < 1) {slideIndexPkmn = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        x[slideIndexPkmn - 1].style.display = "block";
+      }
+    </script> <!--Scroll through Awakening-->
     <link href="style/style.css" rel="stylesheet" type="text/css"/>
     <link href="style/portfolio.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family-Work+Sans:300"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="/img/unnamed.png" rel="web_icon" type="image/png" sizes="16x16"/> <!--Change /img/face.png to cartoon pic of you-->  <!-- background: rgba(232, 127, 12, 1); -->
   </head>
   <body class="index">
@@ -44,44 +95,136 @@
       </div>
       <div class="box" id="right">
         <div id="popup-education" class="popup-position">
-          <div id="popup-wrapper">
-            <div id="popup-container">
-              <h3>Education Game</h3>
-              <p>Congrats, here is info about the popup box</p>
-              <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-education');">Close popup box</a></p>
+          <div class="popup-wrapper">
+            <div class="popup-container w3-content w3-display-container">
+              <h3>Legend Lost</h3>
+              <p class="exit"><a href="javascript:void(0)" onclick="toggle_visibility('popup-education');">&#9747;</a></p>
+              <div class="w3-display-container myslideslgnd">
+                <img src="https://c2.staticflickr.com/2/1799/43149829735_1b671b1a35_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <div class="w3-display-container myslideslgnd">
+                <img src="https://c2.staticflickr.com/2/1816/30188030908_a208b6fb4a_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <div class="w3-display-container myslideslgnd">
+                <img src="https://c2.staticflickr.com/2/1775/43149829595_79d9bcc3fa_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <div class="w3-display-container myslideslgnd">
+                <img src="https://c2.staticflickr.com/2/1834/44007739662_9698d7a5e3_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <button class="arrow-button display-left" onclick="plusDivsinLgnd(-1)">&#10094;</button>
+              <button class="arrow-button display-right" onclick="plusDivsinLgnd(1)">&#10095;</button>
             </div>
           </div>
         </div>
         <div id="popup-phone" class="popup-position">
-          <div id="popup-wrapper">
-            <div id="popup-container">
-              <h3>Phone app for Moser</h3>
-              <p>Congrats, here is info about the popup box</p>
-              <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-phone');">Close popup box</a></p>
+          <div class="popup-wrapper">
+            <div class="popup-container w3-content w3-display-container">
+              <h3>Anonymous Suggestion App for Moser Consulting</h3>
+              <p class="exit"><a href="javascript:void(0)" onclick="toggle_visibility('popup-phone');">&#9747;</a></p>
+              <div class="w3-display-container myslidesapp">
+                <img src="https://c2.staticflickr.com/2/1812/44007739892_af0e73d082_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <div class="w3-display-container myslidesapp">
+                <img src="https://c2.staticflickr.com/2/1779/43149829345_1632797481_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <div class="w3-display-container myslidesapp">
+                <img src="https://c2.staticflickr.com/2/1799/44007740042_fd3ef4c13a_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <p>Moser Consulting wanted to build an app that would enhance employee communication and allows the employees to be heard. The other
+                summer intern and I were tasked with creating this app. When we started discussing possible solutions with our team lead, we decided
+                that this project would be best as a phone app. We then built a mock-up of what we thought the app should look like. We built the page
+                templates and put the demo on Invision and released the link to fellow Moser employee's to get feedback. We then took notes on the feedback
+                we were given and started development. We had weekly meet ups with our team lead to demo our progress. This app was built for android with
+                Java and used Google Firebase for the back end.</p>
+                <button class="arrow-button display-left" onclick="plusDivsinPC(-1)">&#10094;</button>
+                <button class="arrow-button display-right" onclick="plusDivsinPC(1)">&#10095;</button>
             </div>
           </div>
         </div>
         <div id="popup-website" class="popup-position">
-          <div id="popup-wrapper">
-            <div id="popup-container">
-              <h3>Website for Moser</h3>
-              <p>Congrats, here is info about the popup box</p>
-              <p><a href="javascript:void(0)" onclick="toggle_visibility('popup-website');">Close popup box</a></p>
+          <div class="popup-wrapper">
+            <div class="popup-container w3-content w3-display-container">
+              <h3>Project Charter for Moser Consulting</h3>
+              <p class="exit"><a href="javascript:void(0)" onclick="toggle_visibility('popup-website');">&#9747;</a></p>
+              <div class="w3-display-container myslidespc">
+                <img src="https://c2.staticflickr.com/2/1813/43149829445_d58df6bcd8_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <div class="w3-display-container myslidespc">
+                <img src="https://c2.staticflickr.com/2/1817/29118999847_296666e75f_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <div class="w3-display-container myslidespc">
+                <img src="https://c2.staticflickr.com/2/1796/30188031188_66d5c5f3fc_z.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <p>Web page for project managers to organize and list information needed to organize upcoming projects. Was used as a demo
+                product for Project Management Consulting/Training courses ran by Moser. I built this webpage with Ruby on Rails. Throughout
+                the summer I would give demos of the app to the employee who ran the project manager training. I also had to present this project
+                to tech-leads to demo the app for tech leads.</p>
+                <button class="arrow-button display-left" onclick="plusDivsinApp(-1)">&#10094;</button>
+                <button class="arrow-button display-right" onclick="plusDivsinApp(1)">&#10095;</button>
             </div>
           </div>
         </div>
         <div id="popup-pok" class="popup-position">
-          <div id="popup-wrapper">
-            <div id="popup-container">
-              <p class="exit"><a href="javascript:void(0)" onclick="toggle_visibility('popup-pok');">&#9746;</a></p>
-              <img class="mySlides" src="">
-              <img class="mySlides" src="">
-              <img class="mySlides" src="">
-              <img class="mySlides" src="">
-              <h3>Pokemon Fire Emblem</h3>
-              <p>Congrats, here is info about the popup box</p>
-              <button class="" onclick="plusDivs(-1)">&#10094;</button>
-              <button class="" onclick="plusDivs(1)">&#10095;</button>
+          <div class="popup-wrapper">
+            <div class="popup-container w3-content w3-display-container">
+              <h3>Pokemon: Awakening (WIP)</h3>
+              <p class="exit"><a href="javascript:void(0)" onclick="toggle_visibility('popup-pok');">&#9747;</a></p>
+              <div class="w3-display-container myslidespkmn">
+                <img src="https://c2.staticflickr.com/2/1813/29124164077_72d6808126_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <div class="w3-display-container myslidespkmn">
+                <img src="https://c2.staticflickr.com/2/1813/43342696364_543c93f40d_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <div class="w3-display-container myslidespkmn">
+                <img src="https://c2.staticflickr.com/2/1840/43342696674_e3eabb6822_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <div class="w3-display-container myslidespkmn">
+                <img src="https://c2.staticflickr.com/2/1819/29124164427_89f4bf80b3_o.jpg" width="600px">
+                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                  French Alps
+                </div>
+              </div>
+              <button class="arrow-button display-left" onclick="plusDivsinPkmn(-1)">&#10094;</button>
+              <button class="arrow-button display-right" onclick="plusDivsinPkmn(1)">&#10095;</button>
             </div>
           </div>
         </div>
@@ -110,7 +253,7 @@
             </ul>
           </div>
           <div class="proj-img" id="awkn">
-            <p><a class="text-up" id="awkn-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-pok');">Pokemon: Awakening</a><p>
+            <p><a class="text-up" id="awkn-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-pok');">Pokemon: Awakening (WIP)</a><p>
             <ul class="text-up bullet-up">
               <li>C#</li>
               <li>Unity</li>
