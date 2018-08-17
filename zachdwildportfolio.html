@@ -4,80 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Zach Wild</title>
     <script src="script/myscript.js"></script>
-    <script>
-      var slideIndexLgnd = 1;
-      showDivsLgnd(slideIndexLgnd);
-      function plusDivsinLgnd(n) {
-        showDivsLgnd(slideIndexLgnd += n);
-      }
-      function showDivsLgnd(n) {
-        var i;
-        var x = document.getElementsByClassName("myslideslgnd");
-        if (n > x.length) {slideIndexLgnd = 1}
-        if (n < 1) {slideIndexLgnd = x.length}
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";
-        }
-        x[slideIndexLgnd - 1].style.display = "block";
-      }
-    </script>
-    <script>
-      var slideIndexApp = 1;
-      showDivsApp(slideIndexApp);
-      function plusDivsinApp(n) {
-        showDivsApp(slideIndexApp += n);
-      }
-      function showDivsApp(n) {
-        var i;
-        var x = document.getElementsByClassName("myslidesapp");
-        if (n > x.length) {slideIndexApp = 1}
-        if (n < 1) {slideIndexApp = x.length}
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";
-        }
-        x[slideIndexApp - 1].style.display = "block";
-      }
-    </script>
-    <script>
-      var slideIndexPC = 1;
-      showDivsPC(slideIndexPC);
-      function slideIndexPC(n) {
-        showDivsPC(slideIndexPC += n);
-      }
-      function showDivsPC(n) {
-        var i;
-        var x = document.getElementsByClassName("myslidespc");
-        if (n > x.length) {slideIndexPC = 1}
-        if (n < 1) {slideIndexPC = x.length}
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";
-        }
-        x[slideIndexPC - 1].style.display = "block";
-      }
-    </script>
-    <script>
-      var slideIndexPkmn = 1;
-      showDivsPkmn(slideIndexPkmn);
-      function plusDivsinPkmn(n) {
-        showDivsPkmn(slideIndexPkmn += n);
-      }
-      function showDivsPkmn(n) {
-        var i;
-        var x = document.getElementsByClassName("myslidespkmn");
-        if (n > x.length) {slideIndexPkmn = 1}
-        if (n < 1) {slideIndexPkmn = x.length}
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";
-        }
-        x[slideIndexPkmn - 1].style.display = "block";
-      }
-    </script> <!--Scroll through Awakening-->
     <link href="style/style.css" rel="stylesheet" type="text/css"/>
     <link href="style/portfolio.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family-Work+Sans:300"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link href="/img/unnamed.png" rel="web_icon" type="image/png" sizes="16x16"/> <!--Change /img/face.png to cartoon pic of you-->  <!-- background: rgba(232, 127, 12, 1); -->
   </head>
   <body class="index">
     <div class="topnav" id="myTopnav">
@@ -94,143 +24,146 @@
         <h1>Portfolio</h1>
       </div>
       <div class="box" id="right">
-        <div id="popup-education" class="popup-position">
+        <div class="popup-position" id="popup-education">
           <div class="popup-wrapper">
-            <div class="popup-container w3-content w3-display-container">
+            <div class="popup-container display-container">
               <h3>Legend Lost</h3>
               <p class="exit"><a href="javascript:void(0)" onclick="toggle_visibility('popup-education');">&#9747;</a></p>
-              <div class="w3-display-container myslideslgnd">
+              <p></p>
+              <div class="display-container mySlidesLGND">
                 <img src="https://c2.staticflickr.com/2/1799/43149829735_1b671b1a35_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                  French Alps
+                <div class="pic-explain">
+                  The player begins the game by talking with the knight Lancelot and him asking the player to help find areas so he
+                  can set up the different activities in the tournament. This requires the player to find areas given certain information.
                 </div>
               </div>
-              <div class="w3-display-container myslideslgnd">
+              <div class="display-container mySlidesLGND">
                 <img src="https://c2.staticflickr.com/2/1816/30188030908_a208b6fb4a_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                  French Alps
+                <div class="pic-explain">
+                  Once completing all the constructs, Lancelot invites you to join the tournament. The first activity in the tournament
+                  is shooting a catapult at a target. To do this, you must find the distance between you and the target thus using numberlines.
                 </div>
               </div>
-              <div class="w3-display-container myslideslgnd">
+              <div class="display-container mySlidesLGND">
                 <img src="https://c2.staticflickr.com/2/1775/43149829595_79d9bcc3fa_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                <div class="pic-explain">
                   French Alps
                 </div>
               </div>
-              <div class="w3-display-container myslideslgnd">
+              <div class="display-container mySlidesLGND">
                 <img src="https://c2.staticflickr.com/2/1834/44007739662_9698d7a5e3_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                <div class="pic-explain">
                   French Alps
                 </div>
               </div>
-              <button class="arrow-button display-left" onclick="plusDivsinLgnd(-1)">&#10094;</button>
-              <button class="arrow-button display-right" onclick="plusDivsinLgnd(1)">&#10095;</button>
+              <button class="arrow-button display-left" onclick="plusDivsinLGND(-1)">&#10094;</button>
+              <button class="arrow-button display-right" onclick="plusDivsinLGND(1)">&#10095;</button>
             </div>
           </div>
         </div>
         <div id="popup-phone" class="popup-position">
           <div class="popup-wrapper">
-            <div class="popup-container w3-content w3-display-container">
+            <div class="popup-container display-container">
               <h3>Anonymous Suggestion App for Moser Consulting</h3>
               <p class="exit"><a href="javascript:void(0)" onclick="toggle_visibility('popup-phone');">&#9747;</a></p>
-              <div class="w3-display-container myslidesapp">
+              <p>Moser Consulting wanted to build an app that would enhance employee communication and allows the employees to be heard.</p>
+              <div class="display-container mySlidesAPP">
                 <img src="https://c2.staticflickr.com/2/1812/44007739892_af0e73d082_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                  French Alps
+                <div class="pic-explain">
+                  Built a mockup of how the app would run. Put the demo on Invision and allowed fellow
+                  Moser employee's to test it and give feedback before development.
                 </div>
               </div>
-              <div class="w3-display-container myslidesapp">
+              <div class="display-container mySlidesAPP">
                 <img src="https://c2.staticflickr.com/2/1779/43149829345_1632797481_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                  French Alps
+                <div class="pic-explain">
+                  Had weekly meetings with my team lead to discuss progess with the app throughout the summer.
                 </div>
               </div>
-              <div class="w3-display-container myslidesapp">
+              <div class="display-container mySlidesAPP">
                 <img src="https://c2.staticflickr.com/2/1799/44007740042_fd3ef4c13a_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                  French Alps
+                <div class="pic-explain">
+                  This app was built with Java for android devices. Used Google Firebase for the back end.
                 </div>
               </div>
-              <p>Moser Consulting wanted to build an app that would enhance employee communication and allows the employees to be heard. The other
-                summer intern and I were tasked with creating this app. When we started discussing possible solutions with our team lead, we decided
-                that this project would be best as a phone app. We then built a mock-up of what we thought the app should look like. We built the page
-                templates and put the demo on Invision and released the link to fellow Moser employee's to get feedback. We then took notes on the feedback
-                we were given and started development. We had weekly meet ups with our team lead to demo our progress. This app was built for android with
-                Java and used Google Firebase for the back end.</p>
-                <button class="arrow-button display-left" onclick="plusDivsinPC(-1)">&#10094;</button>
-                <button class="arrow-button display-right" onclick="plusDivsinPC(1)">&#10095;</button>
+              <button class="arrow-button display-left" onclick="plusDivsinAPP(-1)">&#10094;</button>
+              <button class="arrow-button display-right" onclick="plusDivsinAPP(1)">&#10095;</button>
             </div>
           </div>
         </div>
         <div id="popup-website" class="popup-position">
           <div class="popup-wrapper">
-            <div class="popup-container w3-content w3-display-container">
+            <div class="popup-container display-container">
               <h3>Project Charter for Moser Consulting</h3>
               <p class="exit"><a href="javascript:void(0)" onclick="toggle_visibility('popup-website');">&#9747;</a></p>
-              <div class="w3-display-container myslidespc">
+              <p>A form based web page for project managers to organize and list information needed to organize upcoming projects. Was used as
+                a demo product for Project Management Consulting/Training courses ran by Moser.</p>
+              <div class="display-container mySlidesPC">
                 <img src="https://c2.staticflickr.com/2/1813/43149829445_d58df6bcd8_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                  French Alps
+                <div class="pic-explain">
+                  Built a mockup of how the app would run thorugh invision and then took feedback from the person who ran project
+                  manager training courses (Lou Russel).
                 </div>
               </div>
-              <div class="w3-display-container myslidespc">
+              <div class="display-container mySlidesPC">
                 <img src="https://c2.staticflickr.com/2/1817/29118999847_296666e75f_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                  French Alps
+                <div class="pic-explain">
+                  I built this with Ruby on Rails. Through the summer I would give demos of the app to the employee who
+                  ran the project manager training courses and got feedback from her.
                 </div>
               </div>
-              <div class="w3-display-container myslidespc">
+              <div class="display-container mySlidesPC">
                 <img src="https://c2.staticflickr.com/2/1796/30188031188_66d5c5f3fc_z.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                  French Alps
+                <div class="pic-explain">
+                  I presented this app in front of Moser's tech-leads to demo the app for tech leads and show off what I had done.
                 </div>
               </div>
-              <p>Web page for project managers to organize and list information needed to organize upcoming projects. Was used as a demo
-                product for Project Management Consulting/Training courses ran by Moser. I built this webpage with Ruby on Rails. Throughout
-                the summer I would give demos of the app to the employee who ran the project manager training. I also had to present this project
-                to tech-leads to demo the app for tech leads.</p>
-                <button class="arrow-button display-left" onclick="plusDivsinApp(-1)">&#10094;</button>
-                <button class="arrow-button display-right" onclick="plusDivsinApp(1)">&#10095;</button>
+              <button class="arrow-button display-left" onclick="plusDivsinPC(-1)">&#10094;</button>
+              <button class="arrow-button display-right" onclick="plusDivsinPC(1)">&#10095;</button>
             </div>
           </div>
         </div>
         <div id="popup-pok" class="popup-position">
           <div class="popup-wrapper">
-            <div class="popup-container w3-content w3-display-container">
+            <div class="popup-container display-container">
               <h3>Pokemon: Awakening (WIP)</h3>
               <p class="exit"><a href="javascript:void(0)" onclick="toggle_visibility('popup-pok');">&#9747;</a></p>
-              <div class="w3-display-container myslidespkmn">
+              <div class="display-container mySlidesPKMN">
                 <img src="https://c2.staticflickr.com/2/1813/29124164077_72d6808126_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                  French Alps
+                <div class="pic-explain">
+                  Intro screen to the game that any good Pokemon game is sure to have. Gives the title of the game and thus sets the standard for
+
                 </div>
               </div>
-              <div class="w3-display-container myslidespkmn">
+              <div class="display-container mySlidesPKMN">
                 <img src="https://c2.staticflickr.com/2/1813/43342696364_543c93f40d_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                  French Alps
+                <div class="pic-explain">
+                  Menu that allows users to either load their previously saved game or start a new game. The third button doesn't do any thing now
+                  but I figured I would leave room for future flexibility if I need another button in the future. For now if you click it, it gives
+                  you cool quotes such as "Saw Inception...Or at least I dreamt I did. -Michael Scott."
                 </div>
               </div>
-              <div class="w3-display-container myslidespkmn">
+              <div class="display-container mySlidesPKMN">
                 <img src="https://c2.staticflickr.com/2/1840/43342696674_e3eabb6822_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                  French Alps
+                <div class="pic-explain">
+                  Just like any Pokemon game, can't start a new game without a classic rolling text screen intro!
                 </div>
               </div>
-              <div class="w3-display-container myslidespkmn">
+              <div class="display-container mySlidesPKMN">
                 <img src="https://c2.staticflickr.com/2/1819/29124164427_89f4bf80b3_o.jpg" width="600px">
-                <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
-                  French Alps
+                <div class="pic-explain">
+                  You can move your units around the map and battle enemy units. Each unit has two actions each round and once those actions are taken,
+                  the unit turns to a stoney color.
                 </div>
               </div>
-              <button class="arrow-button display-left" onclick="plusDivsinPkmn(-1)">&#10094;</button>
-              <button class="arrow-button display-right" onclick="plusDivsinPkmn(1)">&#10095;</button>
+              <button class="arrow-button display-left" onclick="plusDivsinPKMN(-1)">&#10094;</button>
+              <button class="arrow-button display-right" onclick="plusDivsinPKMN(1)">&#10095;</button>
             </div>
           </div>
         </div>
         <div id="wrapper">
           <div class="proj-img" id="lgnd">
-            <p><a class="text-up" id="lgnd-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-education');">Legend Lost</a><p>
+            <p><a class="text-up" id="lgnd-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-education'); plusDivsinLGND(0);">Legend Lost</a><p>
             <ul class="text-up bullet-up">
               <li>C#</li>
               <li>Unity</li>
@@ -238,7 +171,7 @@
             </ul>
           </div>
           <div class="proj-img" id="sggt">
-            <p><a class="text-up" id="sggt-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-phone');">Suggestion App</a><p>
+            <p><a class="text-up" id="sggt-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-phone'); plusDivsinAPP(0);">Suggestion App</a><p>
             <ul class="text-up bullet-up">
               <li>Java</li>
               <li>Google Firebase</li>
@@ -246,14 +179,14 @@
             </ul>
           </div>
           <div class="proj-img" id="pjct">
-            <p><a class="text-up" id="pjct-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-website');">Project Charter</a><p>
+            <p><a class="text-up" id="pjct-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-website'); plusDivsinPC(0)">Project Charter</a><p>
             <ul class="text-up bullet-up">
               <li>Ruby on Rails</li>
               <li>Website</li>
             </ul>
           </div>
           <div class="proj-img" id="awkn">
-            <p><a class="text-up" id="awkn-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-pok');">Pokemon: Awakening (WIP)</a><p>
+            <p><a class="text-up" id="awkn-text-up" href="javascript:void(0)" onclick="toggle_visibility('popup-pok'); plusDivsinPKMN(0)">Pokemon: Awakening (WIP)</a><p>
             <ul class="text-up bullet-up">
               <li>C#</li>
               <li>Unity</li>
