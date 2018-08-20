@@ -75,7 +75,7 @@ body {
 }
 
 .topnav .active:hover {
-  color: #6D0CE8;
+  color: #FFF;
 }
 
 .topnav .spots:hover {
@@ -115,13 +115,16 @@ body {
 }
 
 @media screen and (max-width: 1150px) { /*change width soon*/
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
   }
-
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;

@@ -3,7 +3,7 @@ var slideIndexApp = 1;
 var slideIndexPC = 1;
 var slideIndexPkmn = 1;
 
-function plusDivsinLGND(n) {
+function plusDivsinLGND(n) { //Organizes the demo pics for Legend Lost game. Makes only one image display at a time.
   var tempSlide = slideIndexLgnd += n;
   var lgndLength = document.getElementsByClassName("mySlidesLGND");
   for (var i = 0; i < lgndLength.length; i++) {
@@ -18,7 +18,7 @@ function plusDivsinLGND(n) {
   lgndLength[slideIndexLgnd - 1].style.display = "block";
 }
 
-function plusDivsinAPP(n) {
+function plusDivsinAPP(n) { //Organizes the demo pics for APP project. Makes only one image display at a time.
   var tempSlide = slideIndexApp += n;
   var appLength = document.getElementsByClassName("mySlidesAPP");
   for (var i = 0; i < appLength.length; i++) {
@@ -33,7 +33,7 @@ function plusDivsinAPP(n) {
   appLength[slideIndexApp - 1].style.display = "block";
 }
 
-function plusDivsinPC(n) {
+function plusDivsinPC(n) { //Organizes the demo pics PC project. Makes only one image display at a time.
   var tempSlide = slideIndexPC += n;
   var pcLength = document.getElementsByClassName("mySlidesPC");
   if (tempSlide > pcLength.length) {
@@ -48,7 +48,7 @@ function plusDivsinPC(n) {
   pcLength[slideIndexPC - 1].style.display = "block";
 }
 
-function plusDivsinPKMN(n) {
+function plusDivsinPKMN(n) { //Organizes the demo pics for PKMN game. Makes only one image display at a time.
   var tempSlide = slideIndexPkmn += n;
   var pkmn_length = document.getElementsByClassName("mySlidesPKMN");
   if (tempSlide > pkmn_length.length) {

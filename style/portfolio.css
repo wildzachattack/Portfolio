@@ -19,7 +19,7 @@ h1 {
 .popup-position {
   display: none;
   position:fixed;
-  background-color: rgba(207, 203, 202, 0.8);
+  background-color: rgba(202, 202, 202, 0.3);
   width: 60%;
   height: 100%;
   text-align: center;
@@ -32,8 +32,17 @@ h1 {
 }
 
 .popup-container {
-  background-color: rgba(23, 141, 12, 1);
-  margin-top: 30%;
+  background: #CFCBCA;
+  margin-top: 20%;
+}
+
+.popup-container h3 {
+  color: #1293DB;
+  font-size: 23px;
+}
+
+.popup-container .project-summary {
+  font-size: 16px;
 }
 
 .exit a{
@@ -41,7 +50,7 @@ h1 {
   position: relative;
   float: right;
   color: #000;
-  top: -43px;
+  top: -49px;
   font-size: 16px;
   width: 25px;
 }
