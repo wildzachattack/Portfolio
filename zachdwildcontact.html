@@ -15,24 +15,25 @@
       <a class="spots" href="zachdwildcontact.html">Talk to Me</a>
       <a class="spots" href="zachdwildexperience.html">Experience</a>
       <a class="spots" href="zachdwildportfolio.html">Portfolio</a>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="navSandwhichBar()">
         <i class="fa fa-bars"></i>
       </a>
     </div>
     <div class="clearfix">
       <div id="left">
         <h1>Wanna chat?</h1>
-        <p class="bio">Looking for a <span style="color: #1293DB">game engineer</span>, have any questions, or just need some connections?
-          Shoot me a message by filling this out or connect with me using any of the way listed and I'll get back with you!</p>
+        <p class="bio">Looking for a <span style="color: #1293DB">Game Engineer</span> or just looking to Talk? Shoot me a message by
+          filling this out or by using any of the ways listed below and I'll get back with you!</p>
       </div>
       <div id="right">
         <div class="form">
-          <form>
-            <textarea type="text" id="name-text" placeholder="Name"></textarea>
-            <textarea type="text" placeholder="E-mail"></textarea>
-            <textarea type="text" id="msg" placeholder="Message"></textarea>
+          <form id="contact-form" action="https://formspree.io/wild.zachary.d@gmail.com" method="POST">
+            <textarea type="text" id="name-text" placeholder="Name" name='name'></textarea>
+            <textarea type="text" placeholder="E-mail" name='email'></textarea>
+            <textarea type="text" id="msg" placeholder="Message" name='message'></textarea>
+            <input type="hidden" name="_format" value="plain"/>
+            <button id="animation" type="submit" value="Send">Let's start talking!</button>
           </form>
-          <button type="button" id="animation">Let's start talking!</button>
           <div class="contact-link">
             <div class="head" id="email">
               <p class="title">E-Mail: </p>

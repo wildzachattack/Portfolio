@@ -3,8 +3,13 @@
 }
 
 #left h1{
+  margin-top: 150px;
   text-align: center;
-  margin-top: 350px;
+}
+
+#left p {
+  font-size: 25px;
+  line-height: 35px;
 }
 
 .bio {
@@ -12,7 +17,7 @@
   text-align: center;
   margin: 0 auto;
   max-width: 700px;
-  margin-bottom: 35px;
+  margin-bottom: 200px;
 }
 
 #right {
@@ -96,6 +101,7 @@ button {
   border-radius: 5px;
   line-height: 30px;
   font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .button:hover, .btn:hover {

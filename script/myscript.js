@@ -63,18 +63,23 @@ function plusDivsinPKMN(n) { //Organizes the demo pics for PKMN game. Makes only
   pkmn_length[slideIndexPkmn - 1].style.display = "block";
 }
 
-function myFunction() { //makes topnav responsive
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav")
-    x.className += " responsive";
+function navSandwhichBar() { //makes topnav responsive
+  var nav = document.getElementById("myTopnav");
+  if (nav.className === "topnav")
+    nav.className += " responsive";
   else
-    x.className = "topnav";
+    nav.className = "topnav";
 }
 
 function toggle_visibility(id) { //Hides and unhides popup for portfolio page
   var e = document.getElementById(id);
-  if(e.style.display == 'block')
+  var footer = document.getElementById("footer")
+  if(e.style.display == 'block') {
     e.style.display = 'none';
-  else
+    footer.style.display = 'block';
+  }
+  else {
     e.style.display = 'block';
+    footer.style.display ='none';
+  }
 }
